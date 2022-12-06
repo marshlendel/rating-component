@@ -1,0 +1,22 @@
+$orange: #fb7413;
+$white: #fff;
+$light-grey: #959eac;
+$medium-grey: #7c8798;
+$dark-blue: #252d37;
+$very-dark-blue:  #121417;
+$body-font: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    font-size: $body-font;
+}
