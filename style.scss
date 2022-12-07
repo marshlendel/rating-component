@@ -1,2 +1,18 @@
 @import "./styles/global";
 @import "./styles/rating-component";
+
+@media screen and (max-width: 925px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+
+  .rating {
+    width: 65%;
+  }
+}

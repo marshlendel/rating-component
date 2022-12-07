@@ -15,12 +15,12 @@ body {
 }
 
 .container {
+  width: 360px;
   background: radial-gradient(at top, #252d37, #151b21);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25%;
   border-radius: 2rem;
 }
 
@@ -39,14 +39,24 @@ form p {
   font-size: 1.4rem;
 }
 
+.rating-btn,
 #star {
-  margin: 3rem 0;
-  background: #252d37;
-  width: 4.5rem;
-  height: 4.5rem;
-  padding: 1.39rem 0;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
+}
+
+#star {
+  margin: 2rem 0;
+  background: #252d37;
   text-align: center;
+  position: relative;
+}
+#star img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .ratings {
@@ -55,16 +65,20 @@ form p {
 }
 
 .rating-btn {
-  color: #7c8798;
+  cursor: pointer;
+  color: #959eac;
   background: #252d37;
   border: none;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
   font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+.rating-btn:hover {
+  background: #fb7413;
+  color: #fff;
 }
 
 #submit {
+  cursor: pointer;
   margin: 3rem 0;
   background: #fb7413;
   color: #fff;
@@ -74,4 +88,55 @@ form p {
   border-radius: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in;
+}
+#submit:hover {
+  background: #fff;
+  color: #fb7413;
+}
+
+.active {
+  background: #7c8798;
+  color: #fff;
+}
+
+.remove {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  background: #252d37;
+  color: #fb7413;
+  padding: 0.5rem 2rem;
+  width: 60%;
+  border-radius: 4rem;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+}
+
+.rating-width {
+  width: 87%;
+  margin: 1rem auto 4rem auto;
+}
+
+.submit-image {
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 925px) {
+  .container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+  .rating {
+    width: 65%;
+  }
 }/*# sourceMappingURL=style.css.map */
