@@ -7,8 +7,71 @@
 html {
   font-size: 62.5%;
   font-family: "Overpass", sans-serif;
+  background: #121417;
 }
 
 body {
   font-size: 15px;
+}
+
+.container {
+  background: radial-gradient(at top, #252d37, #151b21);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  border-radius: 2rem;
+}
+
+form {
+  width: 85%;
+  margin: auto;
+}
+form h1 {
+  color: #fff;
+  font-size: 2.4rem;
+}
+form p {
+  color: #959eac;
+  margin: 1rem 0 2rem 0;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+#star {
+  margin: 3rem 0;
+  background: #252d37;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1.39rem 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-btn {
+  color: #7c8798;
+  background: #252d37;
+  border: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+#submit {
+  margin: 3rem 0;
+  background: #fb7413;
+  color: #fff;
+  border: none;
+  padding: 1.25rem 0;
+  width: 100%;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }/*# sourceMappingURL=style.css.map */
